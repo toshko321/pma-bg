@@ -1,0 +1,25 @@
+.wp-theme-1 .lw .navbar-wp .navbar-nav > li > a {
+    border-bottom: 1px solid #e0eded;
+    padding:60px 30px;
+    margin-right: 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.btn-primary {
+    background-color: #61210B;
+    border-color: #8064A2;
+}
+#ss-name {
+    font-weight: 400;
+    font-size: 40pt;
+    text-rendering: optimizeLegibility;
+    cursor: default;
+    word-wrap: break-word;
+    line-height: 1em;
+}
+
+.nav-tabs.focus
+.nav-tabs.active{
+  background-color:none !important;
+}

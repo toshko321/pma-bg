@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> PMA-BG</title>
+        <link rel="stylesheet" href="assets/css/custom.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/foundation.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/twentytwenty.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/jquery/jquery.event.move.js"></script>
+        <script type="text/javascript" src="assets/jquery/jquery.twentytwenty.js"></script>
+    </head>
+
+    <body class="wp-theme-1" style="background-color:#E1F5A9">
+      <div class="container">
+        <!--Tabs Bootstrap Component-->
+        <ul class="nav nav-pills nav-justified" >
+          <!-- FOUR TABS UP TOP-->
+          <li style="background-image:url('assets/images/logo.jpg'); background-size: 100% 100%;"><a data-toggle="tab" href="#About_Us"></a></li>
+          <li class="active"><a data-toggle="tab" href="#About_Us">About Us</a></li>
+          <li><a data-toggle="tab" href="#Projects">Projects</a></li>
+          <li><a data-toggle="tab" href="#Services">Services</a></li>
+        </ul>
+
+        <div class="tab-content">
+        <!-- ABOUT US TAB -->
+        <div id="About_Us" class="tab-pane active">
+          <h3>About Us Information</h3>
+          <p>Teodor</p>
+          <p>Plamen</p>
+          <p>Mariela</p>
+          <!-- JQUERY -->
+          <div id="container1">
+            <img src="assets/images/before.png">
+            <img src="assets/images/after.png">
+            <script>$(window).load(function() {
+            $("#container1").twentytwenty();
+            });</script>
+          </div>
+        </div>
+
+        <!-- PROJECTS TAB -->
+        <div id="Projects" class="tab-pane fade">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">1st House</button>
+            <button type="button" class="btn btn-primary">2nd House</button>
+            <button type="button" class="btn btn-primary">3rd House</button>
+            <button type="button" class="btn btn-primary">4th House</button>
+            <button type="button" class="btn btn-primary">5th House</button>
+          </div>
+          <div class="row">
+            <h3>Current Projects</h3>
+              <div class="col-md-6">
+
+                <a href="#" class="thumbnail">
+                  <img src="assets/images/customhome.jpeg" alt="Picture doesn't exist!"></a>
+              </div>
+              <div class="col-md-6">
+                <a href="#" class="thumbnail">
+                  <img src="assets/images/customhome2.jpeg" alt="Picture doesn't exist!"></a>
+              </div>
+          </div>
+          <div class="row">
+            <h3>Past Projects</h3>
+            <div class="col-md-6">
+              <a href="#" class="thumbnail">
+                <img src="assets/images/customhome3.jpg" alt="Picture doesn't exist!"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="#" class="thumbnail">
+                <img src="assets/images/customhome4.jpg" alt="Picture doesn't exist!"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICES TAB -->
+        <div id="Services" class="tab-pane fade">
+          <h3>Services</h3>
+          <p>CUSTOM HOMES FOR YOU!</p>
+        </div>
+      </div>
+    </body>
+</html>
+

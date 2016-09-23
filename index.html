@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> PMA-BG</title>
+        <!-- CSS -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/custom.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/foundation.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/twentytwenty.css" type="text/css">
+        <link rel="stylesheet" href="assets/css/unite-gallery.css" type="text/css">
+        <link rel='stylesheet' href='assets/css/ug-theme-default.css' type='text/css' /> 
+
+        <!-- JAVASCRIPT/JQUERY -->
+        <script src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/jquery/jquery.event.move.js"></script>
+        <script type="text/javascript" src="assets/jquery/jquery.twentytwenty.js"></script>
+        <script type="text/javascript" src="assets/js/unitegallery.min.js"></script>
+        <script type='text/javascript' src='assets/js/ug-theme-default.js'></script> 
+    </head>
+    
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+    <body class="wp-theme-1" style="background-image:url('assets/images/background1.jpg')">
+      <div class="container">
+        <!--Tabs Bootstrap Component-->
+        <ul class="nav nav-pills nav-justified">
+          <!-- FOUR TABS UP TOP-->
+          <li class="ss-name"><a data-toggle="tab" href="#About_Us" style="text-align:left; height:170px;  cursor:pointer;"><h1 id="ss-name" class="ss-title" style=" color: rgb(34, 34, 34); font-family: 'Amatic SC'; font-size: 54px;">PMA Consulting, Inc.</h1></a></li>
+          <li class="active"><a data-toggle="tab" href="#About_Us">About Us</a></li>
+          <li><a data-toggle="tab" href="#Projects">Projects</a></li>
+          <li><a data-toggle="tab" href="#Services">Services</a></li>
+        </ul>
+
+        <div class="tab-content">
+        <!-- ABOUT US TAB -->
+        <div id="About_Us" class="tab-pane active">
+          <h3>About Us Information</h3>
+          <p>Teodor</p>
+          <p>Plamen</p>
+          <p>Mariela</p>
+          <!-- JQUERY -->
+          <div id="container1">
+            <img src="assets/images/before.png">
+            <img src="assets/images/after.png">
+            <script>$(window).load(function() {
+            $("#container1").twentytwenty();
+            });</script>
+          </div>
+        </div>
+
+        <!-- PROJECTS TAB -->
+        <div id="Projects" class="tab-pane fade" style="text-align:center;">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">1st House</button>
+            <button type="button" class="btn btn-primary">2nd House</button>
+            <button type="button" class="btn btn-primary">3rd House</button>
+            <button type="button" class="btn btn-primary">4th House</button>
+            <button type="button" class="btn btn-primary">5th House</button>
+          </div>
+          <div class="row">
+            <h3>Current Projects</h3>
+              <!-- <div class="col-md-6">
+
+                <a href="#" class="thumbnail">
+                  <img src="assets/images/customhome.jpeg" alt="Picture doesn't exist!"></a>
+              </div>
+              <div class="col-md-6">
+                <a href="#" class="thumbnail">
+                  <img src="assets/images/customhome2.jpeg" alt="Picture doesn't exist!"></a>
+              </div> -->
+              <!-- UNITE GALLERY JQUERY PLUGIN -->
+              <div id="gallery" style="display:none;">
+                <img alt="Image 1 Title" src="assets/images/customhome.jpg"
+                  data-image="assets/images/customhome.jpg"
+                  data-description="First Home!">
+                
+                <img alt="Image 2 Title" src="assets/images/customhome2.jpg"
+                  data-image="assets/images/customhome2.jpg"
+                  data-description="Second Home!">
+              </div>
+              <script type="text/javascript"> 
+              jQuery(document).ready(function(){ 
+              jQuery("#gallery").unitegallery(); 
+              });</script>
+          </div>
+          <div class="row">
+            <h3>Past Projects</h3>
+            <div class="col-md-6">
+              <a href="#" class="thumbnail">
+                <img src="assets/images/customhome3.jpg" alt="Picture doesn't exist!"></a>
+            </div>
+            <div class="col-md-6">
+              <a href="#" class="thumbnail">
+                <img src="assets/images/customhome4.jpg" alt="Picture doesn't exist!"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICES TAB -->
+        <div id="Services" class="tab-pane fade">
+          <h3>Services</h3>
+          <p>CUSTOM HOMES FOR YOU!</p>
+        </div>
+      </div>
+    </body>
+    <footer>Created by Teodor Petrov</footer>
+</html>
+
